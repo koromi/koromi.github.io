@@ -1,11 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Koromi Developer Site</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;margin:16px;max-width:1000px}
+    header{margin:8px 0 16px}
+    .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .card{border:1px solid #eee;border-radius:12px;padding:16px}
+    .card h2{margin:0 0 8px;font-size:1.1rem}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.8rem;background:#f1f5f9}
+    .muted{color:#666}
+  </style>
 </head>
 <body>
-  <h1>Koromi Developer Page</h1>
-  <p>Welcome to my developer site.</p>
+  <header>
+    <h1>Koromi Developer Page</h1>
+    <p class="muted">アプリとドキュメントへの入口です。</p>
+  </header>
+
+  <section class="apps">
+    <!-- 公開済み/準備済みアプリ -->
+    <article class="card">
+      <h2>EasyMp3Play <span class="badge">Docs</span></h2>
+      <p class="muted">ユーザーガイド / ライセンス / プライバシーポリシー</p>
+      <ul>
+        <li><a href="easymp3play/index.html">Documents (EN/JA)</a></li>
+      </ul>
+    </article>
+
+    <!-- これから増やす用のプレースホルダ（任意） -->
+    <!--
+    <article class="card">
+      <h2>（次のアプリ）<span class="badge">Coming soon</span></h2>
+      <p class="muted">公開準備中です。</p>
+      <ul>
+        <li class="muted">Docs link will appear here</li>
+      </ul>
+    </article>
+     -->
+  </section>
 </body>
 </html>
