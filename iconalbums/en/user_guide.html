@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IconAlbums — User Guide (EN)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- hreflang（相互言語の関連を明示） -->
+    <link rel="alternate" href="https://koromi.github.io/iconalbums/ja/user_guide.html" hreflang="ja">
+    <link rel="alternate" href="https://koromi.github.io/iconalbums/en/user_guide.html" hreflang="en">
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",sans-serif;line-height:1.7;margin:16px;max-width:900px;background:#000;color:#d3d3d3}
+      h1,h2{line-height:1.3}
+      ul{padding-left:1.2em}
+      code{background:#000;padding:2px 6px;border-radius:6px;color:#d3d3d3}
+      .meta{color:#d3d3d3}
+      a:link,a:visited{color:#82b1ff}
+      a:hover{color:#bbdefb}
+      a:active{color:#ffffff}
+    </style>
+  </head>
+  <body>
+    <h1>User Guide</h1>
+    <p class="meta">Application: <strong>IconAlbums</strong><br>
+      Effective Date: <strong>2025-12-08</strong><br>
+      Last Updated: <strong>2025-12-08</strong></p>
+
+    <h2>1. What IconAlbums Does</h2>
+    <p>IconAlbums lets you curate small, icon-sized albums and pin them to your launcher for quick access.
+      Each album stores the photos you choose, a cropped icon cover, and a slideshow-ready gallery.</p>
+
+    <h2>2. Album List Screen</h2>
+    <ul>
+      <li>The main screen displays your albums in a two-column grid.</li>
+      <li>Tap an album tile to open it. An empty state appears when you have no albums yet.</li>
+      <li>Use the <code>＋</code> floating button to create a new album. Names are generated automatically and can be renamed later from the detail screen&rsquo;s toolbar menu.</li>
+    </ul>
+
+    <h2>3. Creating Albums &amp; Free Tier Limits</h2>
+    <p>Free users can keep up to <strong>3 albums</strong>, each containing <strong>20 photos</strong>.
+      Purchasing IconAlbums Premium removes both limits. If you reach a limit, the app prompts you to upgrade.</p>
+
+    <h2>4. Adding Photos</h2>
+    <ol>
+      <li>Open an album and tap <strong>Add photos</strong>.</li>
+      <li>On Android 13 (API 33) and above, the system Photo Picker appears. On Android 12 and below, the Storage Access Framework picker opens. Select one photo at a time.</li>
+      <li>Chosen photos appear in the grid instantly. To remove one, tap the trash icon on its card.</li>
+    </ol>
+    <p>Photo metadata is stored locally along with the URI returned by the picker. The originals remain wherever they are stored.</p>
+
+    <h2>5. Setting the Album Icon</h2>
+    <ul>
+      <li>Tap any photo in the grid to launch the square crop tool (powered by uCrop).</li>
+      <li>Adjust the crop and confirm. The resulting image becomes the album&rsquo;s launcher icon and cover.</li>
+      <li>The cropped icon is saved to the app&rsquo;s private storage. Deleting the app removes these generated files.</li>
+    </ul>
+
+    <h2>6. Viewing Photos</h2>
+    <p>Two display modes are available inside an album:</p>
+    <table>
+      <thead>
+        <tr><th>Mode</th><th>How to use it</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Grid</td><td>Default layout for managing photos. Use the remove button or tap a tile to crop.</td></tr>
+        <tr><td>Pager</td><td>Tap <strong>Show pager</strong> to switch to a full-width carousel. Swipe left/right to browse.</td></tr>
+      </tbody>
+    </table>
+    <p>When the pager is visible, tap <strong>Start slideshow</strong> to pick a 3, 10, or 20 second interval. The slideshow loops until you tap <strong>Stop slideshow</strong> or switch back to the grid.</p>
+
+    <h2>7. Pinning Shortcuts</h2>
+    <ul>
+      <li>Tap <strong>Pin shortcut</strong> in the album header to request a launcher shortcut.</li>
+      <li>Approve the launcher prompt. The shortcut uses your cropped icon and opens the album directly.</li>
+      <li>Once pinned, the button changes to <strong>Pinned</strong>. You can remove the shortcut later from your launcher.</li>
+    </ul>
+
+    <h2>8. Settings &amp; Premium</h2>
+    <p>Open <code>Settings</code> from the toolbar on the album list.</p>
+    <ul>
+      <li><strong>Purchase Premium</strong> starts the Google Play purchase flow.</li>
+      <li><strong>Restore purchases</strong> re-queries Google Play to unlock Premium on a new device.</li>
+      <li><strong>Mock billing</strong> is a developer toggle for testing and has no effect in production builds.</li>
+      <li>Privacy policy, terms of service, licenses, and this guide open in the app&rsquo;s built-in HTML viewer for offline access.</li>
+    </ul>
+
+    <h2>9. Tips &amp; Troubleshooting</h2>
+    <ul>
+      <li>If a photo cannot be loaded later, re-open the picker and add it again. The app needs continued access to the source URI.</li>
+      <li>For Android 12 or lower, ensure storage permissions are granted when requested. Without permission the picker cannot provide files.</li>
+      <li>To reset the app, clear its data or uninstall it. This removes albums, photo references, and cached icons.</li>
+      <li>If the launcher declines to pin a shortcut, long-press the home screen and look for the <em>Widgets</em> section to add it manually.</li>
+    </ul>
+
+    <!-- 戻り導線 -->
+    <p><a href="../index.html">Back to Documents</a></p>
+  </body>
+</html>
