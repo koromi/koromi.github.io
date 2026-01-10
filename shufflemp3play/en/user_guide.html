@@ -22,7 +22,7 @@
     <h1>User Guide</h1>
     <p class="meta">Application: <strong>ShuffleMp3Play</strong><br>
       Effective Date: <strong>2025-09-04</strong><br>
-      Last Updated: <strong>2025-12-01</strong></p>
+      Last Updated: <strong>2026-01-10</strong></p>
 
     <h2>1. Folder Selection &amp; Supported Formats</h2>
     <p>On first launch, tap <code>Select Folder</code> and choose a music directory.<br>
@@ -34,8 +34,8 @@
       library so the new changes appear in the track list.</p>
 
     <h3>Quick subfolder search</h3>
-    <p>Tap <code>Search subfolders</code> to scan every nested folder and show only the tracks inside them.
-      Use <code>Back to folder view</code> to return to normal browsing.</p>
+    <p>Tap the Search button to toggle subfolder search. When Search mode is active, the button label reads
+      <code>Search</code>; in normal mode the label reads <code>Off</code>.</p>
 
     <h2>2. Playback Controls</h2>
     <ul>
@@ -64,6 +64,13 @@
     <p>Use <code>One-time Wake Up</code> to pick a time for ShuffleMp3Play to resume or start playback later.
       The schedule is stored locally on the device and can be canceled from the same dialog. This feature is
       available during the free trial and with the Premium upgrade.</p>
+    <ul>
+      <li>The feature uses exact alarms; if the OS blocks exact alarms, the wake time will not run. Allow the
+        app to schedule exact alarms if prompted.</li>
+      <li>After rebooting or changing the device time/zone, the app attempts to restore pending wake times while
+        it is allowed to receive system broadcasts. If the wake time is already in the past, it is cleared.</li>
+      <li>If playback is already running when the wake time arrives, the app leaves the current playback as-is.</li>
+    </ul>
 
     <h2>7. Menu Options</h2>
     <p>Tap the <code>Menu</code> button (≡) to access:</p>
@@ -75,6 +82,7 @@
        <li><code>Premium upgrade</code> &ndash; open the purchase screen for Premium details and upgrade options.</li>
        <li><code>Exit</code> &ndash; stop playback and close the app.</li>
     </ul>
+    <p>Playback progress is always shared between folder browsing and subfolder search; resume keys are kept in sync automatically.</p>
 
     <h2>8. Bluetooth Playback Notes</h2>
     <p>When using Bluetooth audio devices, slight volume wobble or momentary dropouts may occur about one second
